@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!------------Recursos externos------------>
+    <script src="https://kit.fontawesome.com/2f22cf7961.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!------------Estilos y funciones------------>
+    <link rel="stylesheet" href="css/estiloIndex.css">
+    <script defer src="js/funcionesIndex.js"></script>
+    <title>Portfolio - Gomez Angeles</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">ACG</a>
+            <button class="nav__boton">
+            </button>
+            <ul class="nav-lista"> <!--antes: lista-menu, antes class menu-->
+                <li><a href="#info" class="nav-lista__enlace">Inicio</a></li>
+                <li><a href="#conocimientos" class="nav-lista__enlace">Conoceme</a></li>
+                <li><a href="#proyectos" class="nav-lista__enlace">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-lista__enlace">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="info">
+            <div>
+                <img src="img/foto-perfil.jpg" alt="imagen de perfil">
+                <h1>Desarrolladora Web Jr</h1>
+            
+                <p>¡Hola! Me llamo Angeles y actualmente estoy estudiando Desarrollo Web. Busco aprender y superarme constantemente. Mi objetivo es desarrollar programas innovadores y funcionales que puedan facilitar la inclusión de aquellas personas que más los necesitan.</p>
+            </div>
+            <a href="#conocimientos" class="btn-info">Quiero saber más</a>
+        </section>
+
+        <section id="conocimientos">
+            <h2 class="section-titulo">Mis conocimientos</h2>
+            <article>
+                <div>
+                    <h3 class="article__h3">Lenguajes que manejo:</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+               
+               <div>
+                    <h3 class="article__h3">Estoy aprendiendo:</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                    </ul>
+               </div>
+              
+               <div>
+                    <h3 class="article__h3">Otras herramientas:</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Github</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                
+            </article>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="section-titulo">Proyectos</h2>
+            <article class="proyecto-article">
+                <h3 class="article__h3">#1 Instituto de idiomas</h3>
+                <div class="proyecto-info">
+                    <p>Proyecto grupal que representa un sitio web de idiomas basado en el concepto de responsive y "mobile first".</p>
+                    <a href="https://github.com/angelesgomez/web-instituto-idioma.git" class="btn-proyecto" target="_blank">
+                        <i class="fab fa-github" id="ico-github"></i>Abrir en Github
+                    </a>
+                </div>
+            </article>
+
+            <article class="proyecto-article">
+                <h3 class="article__h3">#2 Proyecto</h3>
+                <div class="proyecto-info">
+                    <p>En construcción... </p>
+                    <a href="#" class="btn-proyecto">
+                        <i class="fab fa-github" id="ico-github"></i>Abrir en Github
+                    </a>
+                </div>
+            </article>
+
+            <article class="proyecto-article">
+                <h3 class="article__h3">#3 Proyecto</h3>
+                <div class="proyecto-info">
+                    <p>En construcción...</p>
+                    <a href="#" class="btn-proyecto">
+                        <i class="fab fa-github" id="ico-github"></i>Abrir en Github
+                    </a>
+                </div> 
+            </article>
+        </section>
+
+        <section id="contacto">
+            <h2 class="section-titulo">Contacto</h2>
+            <form  action="https://formspree.io/f/mdobpzdv"
+            method="POST" class="form">
+                <label for="nombre">Nombre y apellido:</label>
+                <input type="text" name="nombre" id="nombre" class="form__input" placeholder="Ej.:Laura Perez">
+                <br>
+                <label for="correo">E-mail:</label>
+                <input type="email" name="email" id="correo" class="form__input" placeholder="Ej.:tucorreo@gmail.com">
+                <br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="message" id="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" cols="3"></textarea>
+                <br>
+                <button type="submit" class="form__button" >Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3>Sigamos conectados</h3>
+        <ul>
+            <li><a href="https://github.com/angelesgomez"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/angeles-gomez-lnkdn"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+ 
+        <p>Gracias por su visita</p>
+        <p>Hecho con <span>&#128153</span><br>Copyright 2022 - Versión 1.0.0</p>
+    </footer>
+    <script src="js/funcionForm.js"></script>
+</body>
+</html>
