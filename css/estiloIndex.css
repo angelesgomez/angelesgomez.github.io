@@ -135,18 +135,19 @@ main{
     display: block;
     background-color: var(--color-principal);
 }
-#conocimientos article ul{
+#conocimientos article ul, #proyectos article ul{
     list-style-image: url(../img/indicador-list.svg);
     padding: 0em 1em;
 }
-#conocimientos article, #proyectos article, .form{ /*aplica para todos*/
+/* Aplica para todos*/
+#conocimientos article, #proyectos article, .form{ 
     width: 90%;
     margin: auto;
 }
 .article__h3{
     font-size: 1rem;
     margin-top: 1em;
-    padding: 1em 0;
+    padding: 0.5em 0;
 }
 #proyectos{
     background-color: #f8fcff; 
@@ -155,66 +156,43 @@ main{
     background-position: center bottom;
     background-size: 50%;
 }
-.proyecto-article{
+#proyectos article{
     background-color: rgba(255, 255, 255, 1);
     border-radius: 1.2em;
 }
-.proyecto-article .article__h3{
-    height: 2em;
-    line-height: 2em;
-    position: relative;
+#proyectos article .article__h3{
     padding-left: 1em;
-    border-radius: 1.2em;
-    transition: 0.5s linear;
 }
-.proyecto-article .article__h3::before{
-    content: '+';
-    line-height: 2em;
-    position: absolute;
-    right: 1.5em;
+.div-proy p{
+    padding: 0 1em;
 }
-.proy-active .article__h3::before{
-    content: '-';
+#proyectos .div-proy ul{
+    padding: 0.5em 2em;
 }
-.proyecto-article p{
-    text-align: center;
+#proyectos i{
+    padding: 0 0.2em;
 }
-.proyecto-info a{
+.emoji-proy{
+    font-size: 16px;
+}
+.btn-proyecto{
     display: block;
     text-align: center;
     width: 100%;
     padding: 0.5em 0;
-    position:absolute;
-    bottom: 0;
-    left: 0;
     box-sizing: border-box;
     background-color: var(--color-principal);
     color: white;
     border-radius: 0 0 1.2em 1.2em;
     transition: .3s linear;
 }
-.proyecto-info{
-    height: 0;
-    overflow: hidden;
-    padding: 0 0.2em;
-    transition: 0.4s linear;
-    position: relative;
-    border-radius: 0 0 1.2em 1.2em;
-}
-.proy-active .proyecto-info{
-    height: 6em;
-}
-.proy-active.proyecto-article h3{
-    border-radius:  1.2em 1.2em 0 0;
-}
-#proyectos i{
-    padding: 0 0.2em;
-}
-.proyecto-info img{
-    display: none;
-}
 #contacto{
     background-color: #fdfeff; 
+}
+#contacto p{
+    text-align: center;
+    margin-bottom: 0.5em;
+    padding: 0 0.5em;
 }
 .form{
     padding: 0.5em;
@@ -362,9 +340,11 @@ main{
     }
     .article__h3{
         font-size: 1.1rem;
+        margin-top: 1em;
+        padding: 1em 0;
     }
     #conocimientos article{
-       display: grid;
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5em;
     }
@@ -375,19 +355,34 @@ main{
         outline: 0.2em solid #fff;
         background-color: var(--color-blanco);
         border-radius: 1em;
-        padding: 2em;
+        padding: 0.5em 1.5em;
         box-shadow: 10px 12px 15px 0px rgba(218, 218, 218, 0.2);
         -webkit-box-shadow: 10px 12px 15px 0px rgba(218, 218, 218,0.2);
         -moz-box-shadow: 10px 12px 15px 0px rgba(218, 218, 218,0.2);
     }
-    #conocimientos article ul{
+    #conocimientos article ul, #proyectos article ul{
         padding-bottom: 1em;
     }
-    #conocimientos article ul li{
+    #conocimientos article ul li, #proyectos article ul li{
         padding: 0.2em 0;
     }
-    .proyecto-article .article__h3:hover{
-        cursor: pointer;
+    #proyectos article{
+        outline: 0.2em solid #fff;
+        
+        box-shadow: 10px 12px 15px 0px rgba(218, 218, 218, 0.2);
+        -webkit-box-shadow: 10px 12px 15px 0px rgba(218, 218, 218,0.2);
+        -moz-box-shadow: 10px 12px 15px 0px rgba(218, 218, 218,0.2);
+        width: 50%;
+    }
+    .div-proy p{
+        padding: 0 1em;
+    }
+    #proyectos article ul{
+        padding: 0 2em;
+        padding-bottom: 1em;
+    }
+    .emoji-proy{
+        font-size: 18px;
     }
     .btn-proyecto:hover{
         background-color:#fff;
@@ -449,7 +444,7 @@ main{
     #conocimientos article{ 
         width: 70%;
     }
-    #proyectos article, .form{
-        width: 60%;
+    .form{
+        width: 55%;
     }
 }
